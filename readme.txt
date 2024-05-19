@@ -1,0 +1,1 @@
+Los wireframes para desktop y mobile se encuentran en la pagina wireframes, 5 para mobile, 5 para desktop, todo realizado en Balsamiq.

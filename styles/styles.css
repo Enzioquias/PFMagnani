@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+}
+@font-face {
+  font-family: briemHand;
+  src: url(./../assets/fonts/Briem_Hand/BriemHand-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: poetsenOne;
+  src: url(./../assets/fonts/Poetsen_One/PoetsenOne-Regular.ttf);
+}
+@font-face {
+  font-family: ubuntuSansItalicV;
+  src: url(./../assets/fonts/Ubuntu_Sans/UbuntuSans-Italic-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: ubuntuSansItalic;
+  src: url(./../assets/fonts/Ubuntu_Sans/UbuntuSans-VariableFont_wdth\wght.ttf);
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.texto {
+  background-color: rgb(199, 168, 127);
+  padding: 10px;
+}
+
+.headerLogo {
+  width: 4%;
+}
+.logoAFN {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.mainTitle {
+  padding-left: 1vw;
+}
+
+h1 {
+  font-family: briemHand;
+  font-size: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+main h2 {
+  font-family: ubuntuSansItalicV;
+}
+
+main section, main h1{
+  border: 1px solid black;
+  box-shadow: 0px 0px 100px rgba(172, 10, 10, 0.199);
+  /* TENGO QUE REVISAR POR QUE NO ANDA EL SOMBREADO */
+}
+
+main p,
+main li {
+  font-family: ubuntuSansItalicV;
+  line-height: 1.7rem;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+div a h2 {
+  color: black;
+}
+
+header ul {
+  padding: 0px;
+  list-style-type: none;
+  color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: rgb(161, 216, 148);
+  position: static;
+  height: 75px;
+  width: 100%;
+  margin-bottom: 1vh;
+  border-bottom: 1px solid black;
+}
+
+.headerSeparator {
+  width: 45%;
+}
+
+.headerButton {
+  text-align: center;
+  display: grid;
+  /* Usamos "display: grid" para centrar el contenido en la transversal del flex */
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  border: 1px solid black;
+  height: 99%;
+  padding: 0px 1vw 0px 1vw;
+}
+/* Se debe apuntar especificamente al anchor para alterar su estilizado nativo */
+header li a {
+  text-decoration: none;
+}
+
+header a:hover,
+header div a:hover {
+  color: rgb(255, 250, 250);
+}
+main {
+  height: 100vh;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(119, 119, 119);
+  position: static;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+  
+}
+
+.footerChild {
+  color: white;
+}
+.footerChild1 {
+  margin-left: 30px;
+}
+
+.footerChild2 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.footerChild3 a {
+  color: inherit;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.imagen{
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px rgb(27, 19, 19);
+}
+
+footer {
+  grid-area: footer;
+}
