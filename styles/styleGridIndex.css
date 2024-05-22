@@ -1,6 +1,7 @@
+
+
 main {
   width: 90%;
-  min-height: 300vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
@@ -20,6 +21,23 @@ main {
 
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width:768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 3fr 1fr 1fr 1fr 1fr 3fr 1fr;
+    grid-template-areas:
+    "tituloh1 tituloh1"
+    "imagen1 imagen2"
+    "texto1 texto1" 
+    "imagen3 imagen3"
+    "imagen4 imagen4"
+    "imagen5 imagen5"
+    "imagen6 imagen6"
+    "texto2 texto2"
+    "footer footer"
+  }
 }
 
 main h1 {

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./../styles/styles.css" />
     <link rel="stylesheet" href="./../styles/styleGridSobreNosotros.css" />
     <title>Sobre Nosotros</title>
@@ -37,6 +38,27 @@
             >Recursos/Información</a
           >
         </li>
+          <!-- Comienza el menu hamburguesa: testeo -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <img class="menuHamburguesa" src="./../assets/images/pngwing.com.png" alt="">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./../pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./../pages/sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./../pages/recursos.html">Recursos/Información</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Fin del menu hamburguesa -->
       </ul>
     </header>
     <main>
@@ -88,5 +110,7 @@
         <p><a href="#logoAFN">Ir a la cima</a></p>
       </div>
     </footer>
+
+    <script src="./../bootstrap/js/bootstrap.js"></script>
   </body>
 </html>
