@@ -24,6 +24,30 @@ main {
   margin-right: auto;
 }
 
+@media (max-width:768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 20% 20% 40% 10% 20% 40% 20% 40% 20% 40% 20% 40% 10%;
+    grid-template-areas:
+    "tituloh1"
+    "tituloHuevos"
+    "huevosMarrones"
+    "huevosBlancos"
+    "textoHuevos"
+    "tituloBalanceados"
+    "imagenGallinas"
+    "textoGallinas"
+    "imagenPollos"
+    "textoPollos"
+    "imagenCerdos" 
+    "textoCerdos"
+    "imagenRumiantes" 
+    "textoRumiantes"
+    "footer";
+    
+  }
+}
+
 .imagen {
   width: 100%;
   aspect-ratio: 1/1;
