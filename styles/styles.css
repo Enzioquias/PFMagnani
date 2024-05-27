@@ -25,6 +25,8 @@ body {
 .texto {
   background-color: rgb(199, 168, 127);
   padding: 10px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 100px rgba(172, 10, 10, 0.199);
 }
 
 .headerLogo {
@@ -39,10 +41,9 @@ body {
   padding-left: 1vw;
 }
 
-.menuHamburguesa{
+.menuHamburguesa {
   height: 50px;
   width: 50px;
-
 }
 
 h1 {
@@ -57,19 +58,12 @@ h2 {
   font-size: xx-large;
 }
 
-main{
-  margin-bottom: 40px;
+main {
+  width: 90%;
   z-index: -1;
 }
 main h2 {
   font-family: ubuntuSansItalicV;
-}
-
-main section,
-main h1 {
-  border: 1px solid black;
-  box-shadow: 0px 0px 100px rgba(172, 10, 10, 0.199);
-  /* TENGO QUE REVISAR POR QUE NO ANDA EL SOMBREADO */
 }
 
 main p,
@@ -133,17 +127,17 @@ footer {
   align-items: center;
   height: 90px;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 15px auto;
   background-color: rgb(119, 119, 119);
   position: static;
   border: 1px solid black;
-  margin-bottom: 15px;
   line-height: 1.5rem;
 }
 
 .footerChild {
   color: white;
+  max-width: 33%;
+  max-height: 100%;
 }
 .footerChild1 {
   margin-left: 1vw;
@@ -172,7 +166,6 @@ footer {
   grid-area: footer;
 }
 
-
 @media (max-width: 1000px) and (min-width: 100px) {
   .headerSeparator {
     width: 0px;
@@ -180,15 +173,17 @@ footer {
 }
 
 @media (min-width: 769px) {
-.navbar-toggler{
-  display: none;
+  .navbar-toggler {
+    display: none;
+  }
 }
-}
-  
 
 @media (max-width: 768px) {
+  .footerChild2 {
+    transform: scale(0.75);
+  }
 
-  .headerSeparator{
+  .headerSeparator {
     width: 50%;
   }
   .headerButton {
@@ -197,17 +192,21 @@ footer {
 
   footer {
     font-size: 10px;
-
   }
 
   .mainTitle {
     font-size: 1.5rem;
   }
-
-
-
-
 }
-  
 
-
+@media (max-width: 500px) {
+  .footerChild1 {
+    max-width: 30%;
+  }
+  .footerChild2 {
+    max-width: 60%;
+  }
+  .footerChild3 {
+    max-width: 10%;
+  }
+}

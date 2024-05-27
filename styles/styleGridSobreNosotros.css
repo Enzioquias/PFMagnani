@@ -1,13 +1,13 @@
 main {
-    width: 90%;
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-rows: 1fr 4fr 4fr 4fr;
+    grid-template-rows: 30vh 4fr 4fr 4fr 10vh;
     grid-template-areas:
       "tituloh1 tituloh1"
       "videoYoutube articleText"
       "imagen2 articleText"
-      "imagen1 articleText";
+      "imagen1 articleText"
+      "footer footer";
   
     column-gap: 20px;
     row-gap: 20px;
@@ -43,5 +43,9 @@ main {
     grid-area: imagen2;
     width: 100%;
     aspect-ratio: 1/1;
+  }
+
+  .footer {
+    grid-area: footer;
   }
 

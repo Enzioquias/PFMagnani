@@ -1,10 +1,9 @@
 
 
 main {
-  width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30vh 2fr 1fr 1fr 1fr 1fr 20vh;
   grid-template-areas:
     "tituloh1 tituloh1 tituloh1 tituloh1"
     "imagen1 imagen2 texto1 texto1"
@@ -90,6 +89,9 @@ main h1 {
   height: 100%;
 }
 
+footer {
+  grid-area: footer;
+}
 
 /* ESTO LO USAREMOS SOLO PARA VISIBILIDAD DE LOS ELEMENTOS DEL GRID!! */
 /* .gridChild {

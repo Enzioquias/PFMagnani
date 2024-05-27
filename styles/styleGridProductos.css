@@ -1,8 +1,7 @@
 main {
-  width: 90%;
   display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 1fr 30px 3fr 3fr 30px 3fr 3fr 3fr 2r 1fr;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 30vh 30px 3fr 3fr 30px 3fr 3fr 3fr 2r 20vh;
   grid-template-areas:
     "tituloh1 tituloh1"
     "tituloHuevos tituloHuevos"
