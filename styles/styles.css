@@ -25,7 +25,7 @@ body {
 .texto {
   background-color: rgb(199, 168, 127);
   padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 0px 0px 100px rgba(172, 10, 10, 0.199);
 }
 
@@ -61,6 +61,10 @@ h2 {
 main {
   width: 90%;
   z-index: -1;
+  align-items: center;
+  justify-items: stretch;
+  margin: 5vh auto 20vh auto;
+
 }
 main h2 {
   font-family: ubuntuSansItalicV;
@@ -90,7 +94,7 @@ header ul {
   height: 75px;
   width: 100%;
   margin-bottom: 1vh;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .headerSeparator {
@@ -106,7 +110,7 @@ header ul {
   color: black;
   text-decoration: none;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 99%;
   padding: 0px 1vw 0px 1vw;
 }
@@ -158,7 +162,7 @@ footer {
 }
 
 .imagen {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 0px 0px 10px rgb(27, 19, 19);
 }
 
@@ -210,3 +214,319 @@ footer {
     max-width: 10%;
   }
 }
+
+/* SECCION PAGINA INDEX */
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10% 30% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "tituloh1Index tituloh1Index tituloh1Index tituloh1Index"
+    "imagen1Index imagen2Index texto1Index texto1Index"
+    "texto2Index texto2Index imagen3Index imagen3Index"
+    "texto2Index texto2Index imagen4Index imagen4Index"
+    "texto2Index texto2Index imagen5Index imagen5Index"
+    "texto2Index texto2Index imagen6Index imagen6Index"
+    "footerIndex footerIndex footerIndex footerIndex";
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .mainIndex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 5% 35% 5% 5% 5% 5% 5% 35% 8%;
+    grid-template-areas:
+      "tituloh1Index tituloh1Index"
+      "imagen1Index imagen2Index"
+      "texto1Index texto1Index"
+      "imagen3Index imagen3Index"
+      "imagen4Index imagen4Index"
+      "imagen5Index imagen5Index"
+      "imagen6Index imagen6Index"
+      "texto2Index texto2Index"
+      "footerIndex footerIndex";
+  }
+}
+
+.mainIndex h1 {
+  grid-area: tituloh1Index;
+}
+
+.imagen1Index,
+.imagen2Index {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  /* border: 1px solid black; */
+}
+
+.imagen1Index {
+  grid-area: imagen1Index;
+}
+
+.imagen2Index {
+  grid-area: imagen2Index;
+}
+
+.imagen3Index {
+  grid-area: imagen3Index;
+}
+
+.imagen4Index {
+  grid-area: imagen4Index;
+}
+
+.imagen5Index {
+  grid-area: imagen5Index;
+}
+
+.imagen6Index {
+  grid-area: imagen6Index;
+}
+
+.imagen7Index {
+  grid-area: imagen7Index;
+}
+
+.texto1Index {
+  grid-area: texto1Index;
+}
+
+.texto2Index {
+  grid-area: texto2Index;
+  height: 100%;
+}
+
+.footerIndex {
+  grid-area: footerIndex;
+}
+
+/* SECCION PAGINA SOBRE NOSOTROS */
+
+.mainSobreNosotros {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas:
+    "tituloh1SN tituloh1SN"
+    "videoYoutubeSN articleTextSN"
+    "footerSN footerSN";
+
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+
+.tituloh1SN {
+  grid-area: tituloh1SN;
+}
+
+.articleTextSN {
+  grid-area: articleTextSN;
+}
+
+.videoYoutubeSN {
+  grid-area: videoYoutubeSN;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.imagen1SN {
+  width: 100%;
+  aspect-ratio: 1/1;
+  grid-area: imagen1SN;
+}
+
+.imagen2SN {
+  grid-area: imagen2SN;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.footerSN {
+  grid-area: footerSN;
+}
+
+/* SECCION PAGINA PRODUCTOS */
+
+.mainProductos {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 30vh 30px 3fr 3fr 30px 3fr 3fr 3fr 2r 20vh;
+  grid-template-areas:
+    "tituloh1Prod tituloh1Prod"
+    "tituloHuevosProd tituloHuevosProd"
+    "huevosMarronesProd textoHuevosProd"
+    "huevosBlancosProd textoHuevosProd"
+    "tituloBalanceadosProd tituloBalanceadosProd"
+    "imagenGallinasProd textoGallinasProd"
+    "imagenPollosProd textoPollosProd"
+    "imagenCerdosProd textoCerdosProd"
+    "imagenRumiantesProd textoRumiantesProd"
+    "footerProd footerProd";
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .mainProductos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 20% 20% 40% 10% 20% 40% 20% 40% 20% 40% 20% 40% 10%;
+    grid-template-areas:
+      "tituloh1Prod"
+      "tituloHuevosProd"
+      "huevosMarronesProd"
+      "huevosBlancosProd"
+      "textoHuevosProd"
+      "tituloBalanceadosProd"
+      "imagenGallinasProd"
+      "textoGallinasProd"
+      "imagenPollosProd"
+      "textoPollosProd"
+      "imagenCerdosProd"
+      "textoCerdosProd"
+      "imagenRumiantesProd"
+      "textoRumiantesProd"
+      "footerProd";
+  }
+}
+
+.imagen {
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* border: 1px solid black; */
+  align-self: flex-start;
+}
+
+.texto {
+  align-self: flex-start;
+}
+
+.tituloh1Prod {
+  grid-area: tituloh1Prod;
+}
+
+.tituloHuevosProd {
+  grid-area: tituloHuevosProd;
+}
+
+.huevosMarronesProd {
+  grid-area: huevosMarronesProd;
+}
+
+.huevosBlancosProd {
+  grid-area: huevosBlancosProd;
+}
+
+.textoHuevosProd {
+  grid-area: textoHuevosProd;
+}
+
+.tituloBalanceadosProd {
+  grid-area: tituloBalanceadosProd;
+}
+
+.imagenGallinasProd {
+  grid-area: imagenGallinasProd;
+}
+.imagenPollosProd {
+  grid-area: imagenPollosProd;
+}
+.imagenCerdosProd {
+  grid-area: imagenCerdosProd;
+}
+.imagenRumiantesProd {
+  grid-area: imagenRumiantesProd;
+}
+
+.footerProd {
+  grid-area: footerProd;
+}
+
+/* SECCION PAGINA CONTACTOS */
+
+.mainContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30% 10% 100% 35% 10%;
+  /* Porcentaje es mas escalable y responsive que vh, usar con discrecion cada uno! */
+  grid-template-areas:
+    "tituloh1Contacto tituloh1Contacto"
+    "subtitulo1Contacto subtitulo2Contacto"
+    "mapaGoogleContacto formAvicolaContacto"
+    "datosContacto datosContacto"
+    "footerContacto footerContacto";
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media (max-width: 1200px) AND (min-width: 756px) {
+  .datosContacto ul li,
+  .datosContacto p {
+    font-size: large;
+    line-height: 1rem;
+  }
+
+  .mainContactos {
+    grid-template-rows: 50vh 20vh 100vh 40vh 10vh;
+  }
+}
+
+@media (max-width: 756px) {
+  .mainContacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr 4fr 4fr 2fr;
+    grid-template-areas:
+      "tituloh1Contacto"
+      "subtitulo1Contacto"
+      "mapaGoogleContacto"
+      "subtitulo2Contacto"
+      "formAvicolaContacto"
+      "datosContacto"
+      "footerContacto";
+  }
+}
+
+.tituloh1Contacto {
+  grid-area: tituloh1Contacto;
+}
+
+.mapaGoogleContacto {
+  grid-area: mapaGoogleContacto;
+  height: 100%;
+}
+
+.formAvicolaContacto {
+  grid-area: formAvicolaContacto;
+  height: 100%;
+  width: 100%;
+}
+
+.subtitulo1Contacto {
+  grid-area: subtitulo1Contacto;
+}
+
+.subtitulo2Contacto {
+  grid-area: subtitulo2Contacto;
+}
+
+.footerContacto {
+  grid-area: footerContacto;
+}
+
+.datosContacto {
+  grid-area: datosContacto;
+  height: 100%;
+}
+
+
+/* SECCION PAGINA RECURSOS */
+
+
+
+
