@@ -1,73 +1,77 @@
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30vh 10vh 100vh 10vh;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30vh 10vh 100vh 35vh 10vh;
+  grid-template-areas:
     "tituloh1 tituloh1"
     "subtitulo1 subtitulo2"
     "mapaGoogle formAvicola"
+    "datosContacto datosContacto"
     "footer footer";
-  
-    column-gap: 20px;
-    row-gap: 20px;
-    align-items: center;
-    justify-items: stretch;
-  
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  @media (max-width:1050px) {
-    .tituloh1{
-      font-size: xx-large;
-    }
-    main {
-      .subtitulo1 , .subtitulo2 {
-        font-size: medium;
-      }
-      grid-template-rows: 30vh 10vh 120vh 10vh;
-    }
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: center;
+  justify-items: stretch;
 
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  }
+@media (max-width: 1200px) AND (min-width:756px) {
+.datosContacto ul li, .datosContacto p{
+  font-size: large;
+  line-height: 1rem;
+}
 
-  @media (max-width:756px) {
-    main {
-      grid-template-columns: 1fr;
-      grid-template-rows: 2fr 1fr 4fr 1fr 4fr 1fr;
-      grid-template-areas:
+main {
+  grid-template-rows: 50vh 20vh 100vh 40vh 10vh;
+}
+}
+
+@media (max-width: 756px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr 4fr 4fr 2fr 2fr;
+    grid-template-areas:
       "tituloh1"
       "subtitulo1"
-      "mapaGoogle" 
+      "mapaGoogle"
       "subtitulo2"
       "formAvicola"
-      "footer"
-    }
+      "datosContacto"
+      "footer";
   }
-    
-  .tituloh1 {
-    grid-area: tituloh1;
-  }
+}
 
-  .mapaGoogle {
-    grid-area: mapaGoogle;
-    height: 100%;
-  }
+.tituloh1 {
+  grid-area: tituloh1;
+}
 
-  .formAvicola {
-    grid-area: formAvicola;
-    height: 100%;
-    width: 100%;
-  }
+.mapaGoogle {
+  grid-area: mapaGoogle;
+  height: 100%;
+}
 
-  .subtitulo1 {
-    grid-area: subtitulo1;
-  }
+.formAvicola {
+  grid-area: formAvicola;
+  height: 100%;
+  width: 100%;
+}
 
-  .subtitulo2 {
-    grid-area: subtitulo2;
-  }
+.subtitulo1 {
+  grid-area: subtitulo1;
+}
 
-  footer {
-    grid-area: footer;
-  }
+.subtitulo2 {
+  grid-area: subtitulo2;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.datosContacto {
+  grid-area: datosContacto;
+  height: 100%;
+}

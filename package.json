@@ -1,0 +1,24 @@
+{
+  "name": "proyectomagnani",
+  "version": "1.0.0",
+  "description": "Practica de SASS en mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enzioquias/PreEntrega2Magnani.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "practica"
+  ],
+  "author": "Enzo Magnani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enzioquias/PreEntrega2Magnani/issues"
+  },
+  "homepage": "https://github.com/Enzioquias/PreEntrega2Magnani#readme"
+}
