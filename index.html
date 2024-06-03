@@ -14,85 +14,88 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li class="headerLogo">
-          <a href="./index.html"
-            ><img
-              class="logoAFN"
-              id="logoAFN"
-              src="./assets/images/logoNaranja.jpg"
-              alt=""
-          /></a>
-        </li>
-        <li>
-          <div>
-            <a href="./index.html"
-              ><h2 class="mainTitle">Avícola Frutos del Nido</h2></a
-            >
-          </div>
-        </li>
-        <li class="headerSeparator"></li>
-        <li>
-          <a class="headerButton" href="./pages/productos.html">Productos</a>
-        </li>
-        <li>
-          <a class="headerButton" href="./pages/contacto.html">Contacto</a>
-        </li>
-        <li>
-          <a class="headerButton" href="./pages/sobre-nosotros.html"
-            >Sobre Nosotros</a
-          >
-        </li>
-        <li>
-          <a class="headerButton" href="./pages/recursos.html"
-            >Recursos/Información</a
-          >
-        </li>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="light"
+        z-3
 
-        <!-- Comienza el menu hamburguesa: testeo -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-          <img
-            class="menuHamburguesa"
-            src="./assets/images/pngwing.com.png"
-            alt=""
-          />
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./pages/productos.html"
-                >Productos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/sobre-nosotros.html"
-                >Sobre Nosotros</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/recursos.html"
-                >Recursos/Información</a
-              >
-            </li>
-          </ul>
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/images/logoNaranjaTransparent.png"
+              alt="Avicola FDN"
+              width="80"
+              height="80"
+            />
+          </a>
+          <a class="navbar-brand" href="#">
+            <h2>Avícola Frutos del Nido</h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../paginas/servicios.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./paginas/servicios.html#serv-clas">Clasicos</a></li>
+                            <li><a class="dropdown-item" href="./paginas/servicios.html#serv-clasprem">Clasicos Premium</a></li>
+                            <li><a class="dropdown-item" href="./paginas/servicios.html#serv-trad">Tradicionales</a></li>
+                        </ul>
+                    </li> -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/productos.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/recursos.html"
+                  >Recursos/Información</a
+                >
+              </li>
+              
+            </ul>
+          </div>
         </div>
-        <!-- Fin del menu hamburguesa -->
-      </ul>
+      </nav>
+
     </header>
 
     <main class="mainIndex">
@@ -214,46 +217,46 @@
         src="./assets/images/parrillerosImg.png"
         alt=""
       />
-      <img class="imagen imagen5Index" src="./assets/images/cerdosImg.png" alt="" />
-      <img class="imagen imagen6Index" src="./assets/images/vacasImg.png" alt="" />
+      <img
+        class="imagen imagen5Index"
+        src="./assets/images/cerdosImg.png"
+        alt=""
+      />
+      <img
+        class="imagen imagen6Index"
+        src="./assets/images/vacasImg.png"
+        alt=""
+      />
     </main>
 
     <footer class="footerIndex">
-          <div class="footerChild footerChild1">
-            <p>Avícola Frutos del Nido</p>
-            <p>Granja avícola y Alimentos Balanceados de Granja</p>
-          </div>
-          <div class="footerChild footerChild2">
-            <div>
-              <a
-                class="icoFooter"
-                target="_blank"
-                href="https://www.facebook.com/"
-                ><img src="./assets/images/iconFace.png" alt="icoFacebook"
-              /></a>
-              <a
-                class="icoFooter"
-                target="_blank"
-                href="https://twitter.com/?lang=es"
-                ><img src="./assets/images/icoTwitter.png" alt="icoTwitter"
-              /></a>
-              <a
-                class="icoFooter"
-                target="_blank"
-                href="https://www.instagram.com/"
-                ><img src="./assets/images/icoInsta.png" alt="icoInsta"
-              /></a>
-            </div>
-            <div><p>Nuestras Redes</p></div>
-          </div>
-          <div class="footerChild footerChild3">
-            <p><a href="#logoAFN">Ir a la cima</a></p>
-          </div>
+      <div class="footerChild footerChild1">
+        <p>Avícola Frutos del Nido</p>
+        <p>Granja avícola y Alimentos Balanceados de Granja</p>
+      </div>
+      <div class="footerChild footerChild2">
+        <div>
+          <a class="icoFooter" target="_blank" href="https://www.facebook.com/"
+            ><img src="./assets/images/iconFace.png" alt="icoFacebook"
+          /></a>
+          <a
+            class="icoFooter"
+            target="_blank"
+            href="https://twitter.com/?lang=es"
+            ><img src="./assets/images/icoTwitter.png" alt="icoTwitter"
+          /></a>
+          <a class="icoFooter" target="_blank" href="https://www.instagram.com/"
+            ><img src="./assets/images/icoInsta.png" alt="icoInsta"
+          /></a>
+        </div>
+        <div><p>Nuestras Redes</p></div>
+      </div>
+      <div class="footerChild footerChild3">
+        <p><a href="#logoAFN">Ir a la cima</a></p>
+      </div>
     </footer>
 
-
     <!-- Footer rediseñado -->
-
 
     <script src="./bootstrap/js/bootstrap.js"></script>
   </body>
