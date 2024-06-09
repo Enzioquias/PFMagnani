@@ -73,14 +73,22 @@ main li {
   font-size: 1.2rem;
 }
 
-div a h2 {
+.navbar {
+  background-image: linear-gradient(to top, rgb(161, 216, 148), rgb(41, 180, 41)) !important;
+  border: none !important;
+  border-width: 0 !important;
+}
+
+nav div a h2 {
   color: black;
 }
 
-.navbar {
-  background-color: rgb(161, 216, 148) !important;
-  border: none !important;
-  border-width: 0 !important;
+nav div a h2:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.nav-item:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .nav-item :hover {
@@ -95,7 +103,7 @@ footer {
   height: 90px;
   width: 100%;
   margin: 15px auto;
-  background-color: rgb(119, 119, 119);
+  background-image: linear-gradient(to bottom, rgb(161, 161, 161), rgb(104, 103, 103)) !important;
   position: static;
   border: 1px solid black;
   line-height: 1.5rem;
