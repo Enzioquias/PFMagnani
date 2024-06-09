@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
 }
@@ -138,6 +139,19 @@ footer {
   grid-area: footer;
   margin-bottom: 15px;
   position: absolute;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 13vh;
+  left: 3vw;
+  z-index: 1;
+}
+
+.whatsapp-button img {
+  width: 10vh; /* Puedes ajustar el tamaño del botón */
+  height: 10vh;
+  border-radius: 50%;
 }
 
 /* SECCION PAGINA INDEX */
