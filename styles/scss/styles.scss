@@ -8,19 +8,22 @@
 }
 @font-face {
   font-family: briemHand;
-  src: url(./../assets/fonts/Briem_Hand/BriemHand-VariableFont_wght.ttf);
+  src: url(./../../assets/fonts/Briem_Hand/BriemHand-VariableFont_wght.ttf);
 }
+
 @font-face {
   font-family: poetsenOne;
-  src: url(./../assets/fonts/Poetsen_One/PoetsenOne-Regular.ttf);
+  src: url(./../../assets/fonts/Poetsen_One/PoetsenOne-Regular.ttf);
 }
+
 @font-face {
   font-family: ubuntuSansItalicV;
-  src: url(./../assets/fonts/Ubuntu_Sans/UbuntuSans-Italic-VariableFont_wdth\wght.ttf);
+  src: url(./../../assets/fonts/Ubuntu_Sans/UbuntuSans-Italic-VariableFont_wdth\wght.ttf);
 }
+
 @font-face {
   font-family: ubuntuSansItalic;
-  src: url(./../assets/fonts/Ubuntu_Sans/UbuntuSans-VariableFont_wdth\wght.ttf);
+  src: url(./../../assets/fonts/Ubuntu_Sans/UbuntuSans-VariableFont_wdth\wght.ttf);
 }
 
 body {
@@ -80,27 +83,26 @@ main {
 }
 
 .navbar {
-  // background-color: $colorNavBar !important;
-  background-image: linear-gradient(to top, $colorNavBar, rgb(41, 180, 41)) !important;
+  background-image: linear-gradient(to top, $colorNavBar, rgb(52, 173, 52)) !important;
   border: none !important;
   border-width: 0 !important;
 }
 
-nav div a h2{
-  color: black;
-// Aplicar animacion aqui
-}
 
-nav div a h2:hover{
+body header nav div{
+  a:hover{
+  color: white !important;
   transform: scale(1.05,1.05);
+  }
+  a img:hover{
+    transform: scale(1.15,1.15)
+  }
 }
 
-.nav-item:hover{
-  transform: scale(1.2,1.2);
-}
 
 .nav-item :hover {
   color: white;
+  transform: scale(1.2,1.2)
 }
 
 footer {
@@ -111,7 +113,6 @@ footer {
   height: 90px;
   width: 100%;
   margin: 15px auto;
-  // background-color: rgb(119, 119, 119);
   background-image: linear-gradient(to bottom, rgb(161, 161, 161), rgb(104, 103, 103)) !important;
   position: static;
   border: 1px solid black;
@@ -406,6 +407,17 @@ footer {
 }
 
 .mainRecursos {
+  a{
+    color: rgb(129, 32, 32);
+  }
+  ul {
+    li {
+      a {
+      
+        color: rgb(129, 32, 32);
+      }
+    }
+  }
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -424,16 +436,6 @@ footer {
   grid-area: textoRecursos;
 }
 
-main {
-  ul {
-    li {
-      a {
-        text-decoration: none;
-        color: brown;
-      }
-    }
-  }
-}
 
 // SECCION DE LAS MEDIA QUERIES
 
