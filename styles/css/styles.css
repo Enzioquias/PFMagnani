@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: briemHand;
+  src: url(./../assets/fonts/Briem_Hand/BriemHand-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: poetsenOne;
+  src: url(./../assets/fonts/Poetsen_One/PoetsenOne-Regular.ttf);
+}
+@font-face {
+  font-family: ubuntuSansItalicV;
+  src: url(./../assets/fonts/Ubuntu_Sans/UbuntuSans-Italic-VariableFont_wdthwght.ttf);
+}
+@font-face {
+  font-family: ubuntuSansItalic;
+  src: url(./../assets/fonts/Ubuntu_Sans/UbuntuSans-VariableFont_wdthwght.ttf);
+}
+body {
+  background-color: antiquewhite;
+}
+
+.texto {
+  background-color: rgb(199, 168, 127);
+  padding: 10px;
+  box-shadow: 0px 0px 100px rgba(172, 10, 10, 0.199);
+}
+
+.logoAFN {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.mainTitle {
+  padding-left: 1vw;
+}
+
+.menuHamburguesa {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-family: briemHand;
+  font-size: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+main {
+  width: 95%;
+  align-items: center;
+  justify-items: stretch;
+  margin: 5vh auto 20vh auto;
+}
+main h2,
+main p,
+main li {
+  font-family: ubuntuSansItalicV;
+}
+main p,
+main li {
+  line-height: 1.7rem;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+div a h2 {
+  color: black;
+}
+
+.navbar {
+  background-color: rgb(161, 216, 148) !important;
+  border: none !important;
+  border-width: 0 !important;
+}
+
+.nav-item :hover {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  margin: 15px auto;
+  background-color: rgb(119, 119, 119);
+  position: static;
+  border: 1px solid black;
+  line-height: 1.5rem;
+}
+
+.footerChild {
+  color: white;
+  max-width: 33%;
+  max-height: 100%;
+}
+
+.footerChild1 {
+  margin-left: 1vw;
+}
+
+.footerChild2 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.footerChild3 a {
+  color: inherit;
+  margin-right: 1vw;
+  text-decoration: none;
+}
+
+.imagen {
+  box-shadow: 0px 0px 10px rgb(27, 19, 19);
+}
+
+footer {
+  grid-area: footer;
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+/* SECCION PAGINA INDEX */
+.mainIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "tituloh1Index tituloh1Index tituloh1Index tituloh1Index" "imagen1Index imagen2Index texto1Index texto1Index" "texto2Index texto2Index imagen3Index imagen3Index" "texto2Index texto2Index imagen4Index imagen4Index" "texto2Index texto2Index imagen5Index imagen5Index" "texto2Index texto2Index imagen6Index imagen6Index" "footerIndex footerIndex footerIndex footerIndex";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.mainIndex h1 {
+  grid-area: tituloh1Index;
+}
+
+.imagen1Index,
+.imagen2Index {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.imagen1Index {
+  grid-area: imagen1Index;
+}
+
+.imagen2Index {
+  grid-area: imagen2Index;
+}
+
+.imagen3Index {
+  grid-area: imagen3Index;
+}
+
+.imagen4Index {
+  grid-area: imagen4Index;
+}
+
+.imagen5Index {
+  grid-area: imagen5Index;
+}
+
+.imagen6Index {
+  grid-area: imagen6Index;
+}
+
+.imagen7Index {
+  grid-area: imagen7Index;
+}
+
+.texto1Index {
+  grid-area: texto1Index;
+}
+
+.texto2Index {
+  grid-area: texto2Index;
+}
+
+.footerIndex {
+  grid-area: footerIndex;
+}
+
+.imagen3Index,
+.imagen4Index,
+.imagen5Index,
+.imagen6Index {
+  width: 100%;
+  aspect-ratio: 1/0.3;
+}
+
+/* SECCION PAGINA SOBRE NOSOTROS */
+.mainSobreNosotros {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas: "tituloh1SN tituloh1SN" "videoYoutubeSN articleTextSN" "footerSN footerSN";
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+
+.tituloh1SN {
+  grid-area: tituloh1SN;
+}
+
+.articleTextSN {
+  grid-area: articleTextSN;
+}
+
+.videoYoutubeSN {
+  grid-area: videoYoutubeSN;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.imagen1SN {
+  width: 100%;
+  aspect-ratio: 1/1;
+  grid-area: imagen1SN;
+}
+
+.imagen2SN {
+  grid-area: imagen2SN;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.footerSN {
+  grid-area: footerSN;
+}
+
+/* SECCION PAGINA PRODUCTOS */
+.mainProductos {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "tituloh1Prod tituloh1Prod" "tituloHuevosProd tituloHuevosProd" "huevosMarronesProd textoHuevosProd" "huevosBlancosProd textoHuevosProd" "tituloBalanceadosProd tituloBalanceadosProd" "imagenGallinasProd textoGallinasProd" "imagenPollosProd textoPollosProd" "imagenCerdosProd textoCerdosProd" "imagenRumiantesProd textoRumiantesProd" "footerProd footerProd";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.imgProd {
+  aspect-ratio: 1/0.7;
+}
+
+.imagen {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.texto {
+  align-self: flex-start;
+}
+
+.tituloh1Prod {
+  grid-area: tituloh1Prod;
+}
+
+.tituloHuevosProd {
+  grid-area: tituloHuevosProd;
+}
+
+.huevosMarronesProd {
+  grid-area: huevosMarronesProd;
+}
+
+.huevosBlancosProd {
+  grid-area: huevosBlancosProd;
+}
+
+.textoHuevosProd {
+  grid-area: textoHuevosProd;
+}
+
+.tituloBalanceadosProd {
+  grid-area: tituloBalanceadosProd;
+}
+
+.imagenGallinasProd {
+  grid-area: imagenGallinasProd;
+}
+
+.imagenPollosProd {
+  grid-area: imagenPollosProd;
+}
+
+.imagenCerdosProd {
+  grid-area: imagenCerdosProd;
+}
+
+.imagenRumiantesProd {
+  grid-area: imagenRumiantesProd;
+}
+
+.footerProd {
+  grid-area: footerProd;
+}
+
+/* SECCION PAGINA CONTACTOS */
+.mainContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Porcentaje es mas escalable y responsive que vh, usar con discrecion cada uno! */
+  grid-template-areas: "tituloh1Contacto tituloh1Contacto" "subtitulo1Contacto subtitulo2Contacto" "mapaGoogleContacto formAvicolaContacto" "datosContacto datosContacto" "footerContacto footerContacto";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Contacto {
+  grid-area: tituloh1Contacto;
+}
+
+.mapaGoogleContacto {
+  grid-area: mapaGoogleContacto;
+  height: 100%;
+}
+
+.formAvicolaContacto {
+  grid-area: formAvicolaContacto;
+  height: 100%;
+  width: 100%;
+}
+
+.subtitulo1Contacto {
+  grid-area: subtitulo1Contacto;
+}
+
+.subtitulo2Contacto {
+  grid-area: subtitulo2Contacto;
+}
+
+.footerContacto {
+  grid-area: footerContacto;
+}
+
+.datosContacto {
+  grid-area: datosContacto;
+  height: 100%;
+}
+
+/* SECCION PAGINA RECURSOS */
+.tituloh1Recursos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainRecursos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "tituloh1Recursos" "textoRecursos";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Recursos {
+  grid-area: tituloh1Recursos;
+}
+
+.textoRecursos {
+  grid-area: textoRecursos;
+}
+
+main ul li a {
+  text-decoration: none;
+  color: brown;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .datosContacto ul li,
+  .datosContacto p {
+    font-size: large;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .mainContacto {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tituloh1Contacto" "subtitulo1Contacto" "mapaGoogleContacto" "subtitulo2Contacto" "formAvicolaContacto" "datosContacto" "footerContacto";
+  }
+  .mainProductos {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tituloh1Prod" "tituloHuevosProd" "huevosMarronesProd" "huevosBlancosProd" "textoHuevosProd" "tituloBalanceadosProd" "imagenGallinasProd" "textoGallinasProd" "imagenPollosProd" "textoPollosProd" "imagenCerdosProd" "textoCerdosProd" "imagenRumiantesProd" "textoRumiantesProd" "footerProd";
+  }
+  .mainSobreNosotros {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tituloh1SN" "videoYoutubeSN" "articleTextSN" "footerSN";
+  }
+  .mainIndex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tituloh1Index tituloh1Index" "imagen1Index imagen2Index" "texto1Index texto1Index" "imagen3Index imagen3Index" "imagen4Index imagen4Index" "imagen5Index imagen5Index" "imagen6Index imagen6Index" "texto2Index texto2Index" "footerIndex footerIndex";
+  }
+  .footerChild2 {
+    transform: scale(0.75);
+  }
+  footer {
+    font-size: 10px;
+  }
+  .mapaGoogleContacto {
+    aspect-ratio: 1/1.75;
+  }
+}
+@media (min-width: 769px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .footerChild1 {
+    max-width: 30%;
+  }
+  .footerChild2 {
+    max-width: 60%;
+  }
+  .footerChild3 {
+    max-width: 10%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
