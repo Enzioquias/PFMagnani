@@ -1,0 +1,285 @@
+// SECCION PAGINA INDEX
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "tituloh1Index tituloh1Index tituloh1Index tituloh1Index"
+    "imagen1Index imagen2Index texto1Index texto1Index"
+    "texto2Index texto2Index imagen3Index imagen3Index"
+    "texto2Index texto2Index imagen4Index imagen4Index"
+    "texto2Index texto2Index imagen5Index imagen5Index"
+    "texto2Index texto2Index imagen6Index imagen6Index"
+    "footerIndex footerIndex footerIndex footerIndex";
+  column-gap: 20px;
+  row-gap: 20px;
+  h1 {
+    grid-area: tituloh1Index;
+  }
+}
+
+.imagen1Index {
+  grid-area: imagen1Index;
+}
+
+.imagen2Index {
+  grid-area: imagen2Index;
+}
+
+.imagen3Index {
+  grid-area: imagen3Index;
+}
+
+.imagen4Index {
+  grid-area: imagen4Index;
+}
+
+.imagen5Index {
+  grid-area: imagen5Index;
+}
+
+.imagen6Index {
+  grid-area: imagen6Index;
+}
+
+.imagen7Index {
+  grid-area: imagen7Index;
+}
+
+.texto1Index {
+  grid-area: texto1Index;
+}
+
+.texto2Index {
+  grid-area: texto2Index;
+}
+
+.footerIndex {
+  grid-area: footerIndex;
+}
+
+// SECCION PAGINA SOBRE NOSOTROS
+
+.mainSobreNosotros {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas:
+    "tituloh1SN tituloh1SN"
+    "videoYoutubeSN articleTextSN"
+    "footerSN footerSN";
+
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+
+.tituloh1SN {
+  grid-area: tituloh1SN;
+}
+
+.articleTextSN {
+  grid-area: articleTextSN;
+}
+
+.footerSN {
+  grid-area: footerSN;
+}
+
+.videoYoutubeSN {
+  grid-area: videoYoutubeSN;
+}
+
+.imagen1SN {
+  grid-area: imagen1SN;
+}
+
+.imagen2SN {
+  grid-area: imagen2SN;
+}
+
+// SECCION PAGINA PRODUCTOS
+
+.mainProductos {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    "tituloh1Prod tituloh1Prod"
+    "tituloHuevosProd tituloHuevosProd"
+    "huevosMarronesProd textoHuevosProd"
+    "huevosBlancosProd textoHuevosProd"
+    "tituloBalanceadosProd tituloBalanceadosProd"
+    "imagenGallinasProd textoGallinasProd"
+    "imagenPollosProd textoPollosProd"
+    "imagenCerdosProd textoCerdosProd"
+    "imagenRumiantesProd textoRumiantesProd"
+    "footerProd footerProd";
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Prod {
+  grid-area: tituloh1Prod;
+}
+
+.tituloHuevosProd {
+  grid-area: tituloHuevosProd;
+}
+
+.huevosMarronesProd {
+  grid-area: huevosMarronesProd;
+}
+
+.huevosBlancosProd {
+  grid-area: huevosBlancosProd;
+}
+
+.textoHuevosProd {
+  grid-area: textoHuevosProd;
+}
+
+.tituloBalanceadosProd {
+  grid-area: tituloBalanceadosProd;
+}
+
+.imagenGallinasProd {
+  grid-area: imagenGallinasProd;
+}
+.imagenPollosProd {
+  grid-area: imagenPollosProd;
+}
+.imagenCerdosProd {
+  grid-area: imagenCerdosProd;
+}
+.imagenRumiantesProd {
+  grid-area: imagenRumiantesProd;
+}
+
+.footerProd {
+  grid-area: footerProd;
+}
+
+// SECCION PAGINA CONTACTOS
+
+.mainContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Porcentaje es mas escalable y responsive que vh, usar con discrecion cada uno! */
+  grid-template-areas:
+    "tituloh1Contacto tituloh1Contacto"
+    "subtitulo1Contacto subtitulo2Contacto"
+    "mapaGoogleContacto formAvicolaContacto"
+    "datosContacto datosContacto"
+    "footerContacto footerContacto";
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Contacto {
+  grid-area: tituloh1Contacto;
+}
+
+.mapaGoogleContacto {
+  grid-area: mapaGoogleContacto;
+}
+
+.formAvicolaContacto {
+  grid-area: formAvicolaContacto;
+}
+
+.subtitulo1Contacto {
+  grid-area: subtitulo1Contacto;
+}
+
+.subtitulo2Contacto {
+  grid-area: subtitulo2Contacto;
+}
+
+.footerContacto {
+  grid-area: footerContacto;
+}
+
+.datosContacto {
+  grid-area: datosContacto;
+}
+
+// SECCION PAGINA RECURSOS
+
+.mainRecursos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "tituloh1Recursos"
+    "textoRecursos";
+
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Recursos {
+  grid-area: tituloh1Recursos;
+}
+
+.textoRecursos {
+  grid-area: textoRecursos;
+}
+
+// SECCION DE GRIDS PARA MOBILE
+
+@media (max-width: 768px) {
+  .mainContacto {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tituloh1Contacto"
+      "subtitulo1Contacto"
+      "mapaGoogleContacto"
+      "subtitulo2Contacto"
+      "formAvicolaContacto"
+      "datosContacto"
+      "footerContacto";
+  }
+
+  .mainProductos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tituloh1Prod"
+      "tituloHuevosProd"
+      "huevosMarronesProd"
+      "huevosBlancosProd"
+      "textoHuevosProd"
+      "tituloBalanceadosProd"
+      "imagenGallinasProd"
+      "textoGallinasProd"
+      "imagenPollosProd"
+      "textoPollosProd"
+      "imagenCerdosProd"
+      "textoCerdosProd"
+      "imagenRumiantesProd"
+      "textoRumiantesProd"
+      "footerProd";
+  }
+
+  .mainSobreNosotros {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tituloh1SN"
+      "videoYoutubeSN"
+      "articleTextSN"
+      "footerSN";
+  }
+
+  .mainIndex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "tituloh1Index tituloh1Index"
+      "imagen1Index imagen2Index"
+      "texto1Index texto1Index"
+      "imagen3Index imagen3Index"
+      "imagen4Index imagen4Index"
+      "imagen5Index imagen5Index"
+      "imagen6Index imagen6Index"
+      "texto2Index texto2Index"
+      "footerIndex footerIndex";
+  }
+}

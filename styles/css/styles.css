@@ -1,4 +1,276 @@
-@charset "UTF-8";
+.mainIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "tituloh1Index tituloh1Index tituloh1Index tituloh1Index" "imagen1Index imagen2Index texto1Index texto1Index" "texto2Index texto2Index imagen3Index imagen3Index" "texto2Index texto2Index imagen4Index imagen4Index" "texto2Index texto2Index imagen5Index imagen5Index" "texto2Index texto2Index imagen6Index imagen6Index" "footerIndex footerIndex footerIndex footerIndex";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.mainIndex h1 {
+  grid-area: tituloh1Index;
+}
+
+.imagen1Index {
+  grid-area: imagen1Index;
+}
+
+.imagen2Index {
+  grid-area: imagen2Index;
+}
+
+.imagen3Index {
+  grid-area: imagen3Index;
+}
+
+.imagen4Index {
+  grid-area: imagen4Index;
+}
+
+.imagen5Index {
+  grid-area: imagen5Index;
+}
+
+.imagen6Index {
+  grid-area: imagen6Index;
+}
+
+.imagen7Index {
+  grid-area: imagen7Index;
+}
+
+.texto1Index {
+  grid-area: texto1Index;
+}
+
+.texto2Index {
+  grid-area: texto2Index;
+}
+
+.footerIndex {
+  grid-area: footerIndex;
+}
+
+.mainSobreNosotros {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas: "tituloh1SN tituloh1SN" "videoYoutubeSN articleTextSN" "footerSN footerSN";
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+
+.tituloh1SN {
+  grid-area: tituloh1SN;
+}
+
+.articleTextSN {
+  grid-area: articleTextSN;
+}
+
+.footerSN {
+  grid-area: footerSN;
+}
+
+.videoYoutubeSN {
+  grid-area: videoYoutubeSN;
+}
+
+.imagen1SN {
+  grid-area: imagen1SN;
+}
+
+.imagen2SN {
+  grid-area: imagen2SN;
+}
+
+.mainProductos {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "tituloh1Prod tituloh1Prod" "tituloHuevosProd tituloHuevosProd" "huevosMarronesProd textoHuevosProd" "huevosBlancosProd textoHuevosProd" "tituloBalanceadosProd tituloBalanceadosProd" "imagenGallinasProd textoGallinasProd" "imagenPollosProd textoPollosProd" "imagenCerdosProd textoCerdosProd" "imagenRumiantesProd textoRumiantesProd" "footerProd footerProd";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Prod {
+  grid-area: tituloh1Prod;
+}
+
+.tituloHuevosProd {
+  grid-area: tituloHuevosProd;
+}
+
+.huevosMarronesProd {
+  grid-area: huevosMarronesProd;
+}
+
+.huevosBlancosProd {
+  grid-area: huevosBlancosProd;
+}
+
+.textoHuevosProd {
+  grid-area: textoHuevosProd;
+}
+
+.tituloBalanceadosProd {
+  grid-area: tituloBalanceadosProd;
+}
+
+.imagenGallinasProd {
+  grid-area: imagenGallinasProd;
+}
+
+.imagenPollosProd {
+  grid-area: imagenPollosProd;
+}
+
+.imagenCerdosProd {
+  grid-area: imagenCerdosProd;
+}
+
+.imagenRumiantesProd {
+  grid-area: imagenRumiantesProd;
+}
+
+.footerProd {
+  grid-area: footerProd;
+}
+
+.mainContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Porcentaje es mas escalable y responsive que vh, usar con discrecion cada uno! */
+  grid-template-areas: "tituloh1Contacto tituloh1Contacto" "subtitulo1Contacto subtitulo2Contacto" "mapaGoogleContacto formAvicolaContacto" "datosContacto datosContacto" "footerContacto footerContacto";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Contacto {
+  grid-area: tituloh1Contacto;
+}
+
+.mapaGoogleContacto {
+  grid-area: mapaGoogleContacto;
+}
+
+.formAvicolaContacto {
+  grid-area: formAvicolaContacto;
+}
+
+.subtitulo1Contacto {
+  grid-area: subtitulo1Contacto;
+}
+
+.subtitulo2Contacto {
+  grid-area: subtitulo2Contacto;
+}
+
+.footerContacto {
+  grid-area: footerContacto;
+}
+
+.datosContacto {
+  grid-area: datosContacto;
+}
+
+.mainRecursos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "tituloh1Recursos" "textoRecursos";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tituloh1Recursos {
+  grid-area: tituloh1Recursos;
+}
+
+.textoRecursos {
+  grid-area: textoRecursos;
+}
+
+@media (max-width: 768px) {
+  .mainContacto {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tituloh1Contacto" "subtitulo1Contacto" "mapaGoogleContacto" "subtitulo2Contacto" "formAvicolaContacto" "datosContacto" "footerContacto";
+  }
+  .mainProductos {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tituloh1Prod" "tituloHuevosProd" "huevosMarronesProd" "huevosBlancosProd" "textoHuevosProd" "tituloBalanceadosProd" "imagenGallinasProd" "textoGallinasProd" "imagenPollosProd" "textoPollosProd" "imagenCerdosProd" "textoCerdosProd" "imagenRumiantesProd" "textoRumiantesProd" "footerProd";
+  }
+  .mainSobreNosotros {
+    grid-template-columns: 1fr;
+    grid-template-areas: "tituloh1SN" "videoYoutubeSN" "articleTextSN" "footerSN";
+  }
+  .mainIndex {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tituloh1Index tituloh1Index" "imagen1Index imagen2Index" "texto1Index texto1Index" "imagen3Index imagen3Index" "imagen4Index imagen4Index" "imagen5Index imagen5Index" "imagen6Index imagen6Index" "texto2Index texto2Index" "footerIndex footerIndex";
+  }
+}
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  margin: 15px auto;
+  background-image: linear-gradient(to bottom, rgb(161, 161, 161), rgb(104, 103, 103)) !important;
+  position: static;
+  border: 1px solid black;
+  line-height: 1.5rem;
+}
+
+.footerChild {
+  color: white;
+  max-width: 33%;
+  max-height: 100%;
+}
+
+.footerChild1 {
+  margin-left: 1vw;
+}
+
+.footerChild2 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.footerChild3 a {
+  color: inherit;
+  margin-right: 1vw;
+  text-decoration: none;
+}
+
+.imagen {
+  box-shadow: 0px 0px 10px rgb(27, 19, 19);
+}
+
+footer {
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  .footerChild1 {
+    max-width: 30%;
+  }
+  .footerChild2 {
+    max-width: 60%;
+  }
+  .footerChild3 {
+    max-width: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .footerChild2 {
+    transform: scale(0.75);
+  }
+  footer {
+    font-size: 10px;
+  }
+}
 * {
   margin: 0;
 }
@@ -69,9 +341,9 @@ main li {
 }
 main p,
 main li {
-  line-height: 1.7rem;
+  line-height: 1.5rem;
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .navbar {
@@ -80,65 +352,9 @@ main li {
   border-width: 0 !important;
 }
 
-body header nav div a:hover {
-  color: white !important;
-  transform: scale(1.05, 1.05);
-}
-body header nav div a img:hover {
-  transform: scale(1.15, 1.15);
-}
-
-.nav-item :hover {
-  color: white;
-  transform: scale(1.2, 1.2);
-}
-
-footer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 90px;
-  width: 100%;
-  margin: 15px auto;
-  background-image: linear-gradient(to bottom, rgb(161, 161, 161), rgb(104, 103, 103)) !important;
-  position: static;
-  border: 1px solid black;
-  line-height: 1.5rem;
-}
-
-.footerChild {
-  color: white;
-  max-width: 33%;
-  max-height: 100%;
-}
-
-.footerChild1 {
-  margin-left: 1vw;
-}
-
-.footerChild2 {
-  display: flex;
-  flex-flow: column nowrap;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
-
-.footerChild3 a {
-  color: inherit;
-  margin-right: 1vw;
-  text-decoration: none;
-}
-
-.imagen {
-  box-shadow: 0px 0px 10px rgb(27, 19, 19);
-}
-
-footer {
-  grid-area: footer;
-  margin-bottom: 15px;
-  position: absolute;
+.navbar-logo {
+  height: 80px;
+  width: 80px;
 }
 
 .whatsapp-button {
@@ -149,23 +365,12 @@ footer {
 }
 
 .whatsapp-button img {
-  width: 10vh; /* Puedes ajustar el tamaño del botón */
   height: 10vh;
+  width: 10vh;
   border-radius: 50%;
 }
 
 /* SECCION PAGINA INDEX */
-.mainIndex {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "tituloh1Index tituloh1Index tituloh1Index tituloh1Index" "imagen1Index imagen2Index texto1Index texto1Index" "texto2Index texto2Index imagen3Index imagen3Index" "texto2Index texto2Index imagen4Index imagen4Index" "texto2Index texto2Index imagen5Index imagen5Index" "texto2Index texto2Index imagen6Index imagen6Index" "footerIndex footerIndex footerIndex footerIndex";
-  column-gap: 20px;
-  row-gap: 20px;
-}
-.mainIndex h1 {
-  grid-area: tituloh1Index;
-}
-
 .imagen1Index,
 .imagen2Index {
   width: 100%;
@@ -175,74 +380,16 @@ footer {
   margin-bottom: auto;
 }
 
-.imagen1Index {
-  grid-area: imagen1Index;
-}
-
-.imagen2Index {
-  grid-area: imagen2Index;
-}
-
-.imagen3Index {
-  grid-area: imagen3Index;
-}
-
-.imagen4Index {
-  grid-area: imagen4Index;
-}
-
-.imagen5Index {
-  grid-area: imagen5Index;
-}
-
-.imagen6Index {
-  grid-area: imagen6Index;
-}
-
-.imagen7Index {
-  grid-area: imagen7Index;
-}
-
-.texto1Index {
-  grid-area: texto1Index;
-}
-
-.texto2Index {
-  grid-area: texto2Index;
-}
-
-.footerIndex {
-  grid-area: footerIndex;
-}
-
 .imagen3Index,
 .imagen4Index,
 .imagen5Index,
 .imagen6Index {
   width: 100%;
-  aspect-ratio: 1/0.3;
+  aspect-ratio: 1/0.2;
 }
 
 /* SECCION PAGINA SOBRE NOSOTROS */
-.mainSobreNosotros {
-  display: grid;
-  grid-template-columns: 40% auto;
-  grid-template-areas: "tituloh1SN tituloh1SN" "videoYoutubeSN articleTextSN" "footerSN footerSN";
-  column-gap: 20px;
-  row-gap: 20px;
-  align-items: flex-start;
-}
-
-.tituloh1SN {
-  grid-area: tituloh1SN;
-}
-
-.articleTextSN {
-  grid-area: articleTextSN;
-}
-
 .videoYoutubeSN {
-  grid-area: videoYoutubeSN;
   width: 100%;
   aspect-ratio: 1/1;
 }
@@ -250,28 +397,14 @@ footer {
 .imagen1SN {
   width: 100%;
   aspect-ratio: 1/1;
-  grid-area: imagen1SN;
 }
 
 .imagen2SN {
-  grid-area: imagen2SN;
   width: 100%;
   aspect-ratio: 1/1;
 }
 
-.footerSN {
-  grid-area: footerSN;
-}
-
 /* SECCION PAGINA PRODUCTOS */
-.mainProductos {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "tituloh1Prod tituloh1Prod" "tituloHuevosProd tituloHuevosProd" "huevosMarronesProd textoHuevosProd" "huevosBlancosProd textoHuevosProd" "tituloBalanceadosProd tituloBalanceadosProd" "imagenGallinasProd textoGallinasProd" "imagenPollosProd textoPollosProd" "imagenCerdosProd textoCerdosProd" "imagenRumiantesProd textoRumiantesProd" "footerProd footerProd";
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
 .imgProd {
   aspect-ratio: 1/0.7;
 }
@@ -285,106 +418,21 @@ footer {
   align-self: flex-start;
 }
 
-.tituloh1Prod {
-  grid-area: tituloh1Prod;
-}
-
-.tituloHuevosProd {
-  grid-area: tituloHuevosProd;
-}
-
-.huevosMarronesProd {
-  grid-area: huevosMarronesProd;
-}
-
-.huevosBlancosProd {
-  grid-area: huevosBlancosProd;
-}
-
-.textoHuevosProd {
-  grid-area: textoHuevosProd;
-}
-
-.tituloBalanceadosProd {
-  grid-area: tituloBalanceadosProd;
-}
-
-.imagenGallinasProd {
-  grid-area: imagenGallinasProd;
-}
-
-.imagenPollosProd {
-  grid-area: imagenPollosProd;
-}
-
-.imagenCerdosProd {
-  grid-area: imagenCerdosProd;
-}
-
-.imagenRumiantesProd {
-  grid-area: imagenRumiantesProd;
-}
-
-.footerProd {
-  grid-area: footerProd;
-}
-
 /* SECCION PAGINA CONTACTOS */
-.mainContacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Porcentaje es mas escalable y responsive que vh, usar con discrecion cada uno! */
-  grid-template-areas: "tituloh1Contacto tituloh1Contacto" "subtitulo1Contacto subtitulo2Contacto" "mapaGoogleContacto formAvicolaContacto" "datosContacto datosContacto" "footerContacto footerContacto";
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
-.tituloh1Contacto {
-  grid-area: tituloh1Contacto;
-}
-
 .mapaGoogleContacto {
-  grid-area: mapaGoogleContacto;
   height: 100%;
 }
 
 .formAvicolaContacto {
-  grid-area: formAvicolaContacto;
   height: 100%;
   width: 100%;
 }
 
-.subtitulo1Contacto {
-  grid-area: subtitulo1Contacto;
-}
-
-.subtitulo2Contacto {
-  grid-area: subtitulo2Contacto;
-}
-
-.footerContacto {
-  grid-area: footerContacto;
-}
-
 .datosContacto {
-  grid-area: datosContacto;
   height: 100%;
 }
 
 /* SECCION PAGINA RECURSOS */
-.tituloh1Recursos {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mainRecursos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "tituloh1Recursos" "textoRecursos";
-  column-gap: 20px;
-  row-gap: 20px;
-}
 .mainRecursos a {
   color: rgb(129, 32, 32);
 }
@@ -392,44 +440,25 @@ footer {
   color: rgb(129, 32, 32);
 }
 
-.tituloh1Recursos {
-  grid-area: tituloh1Recursos;
-}
-
-.textoRecursos {
-  grid-area: textoRecursos;
-}
-
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .datosContacto ul li,
   .datosContacto p {
     font-size: large;
     line-height: 1rem;
   }
+  body header nav div a:hover {
+    color: white !important;
+    transform: scale(1.05, 1.05);
+  }
+  body header nav div a img:hover {
+    transform: scale(1.15, 1.15);
+  }
+  .nav-item :hover {
+    color: white;
+    transform: scale(1.2, 1.2);
+  }
 }
 @media (max-width: 768px) {
-  .mainContacto {
-    grid-template-columns: 1fr;
-    grid-template-areas: "tituloh1Contacto" "subtitulo1Contacto" "mapaGoogleContacto" "subtitulo2Contacto" "formAvicolaContacto" "datosContacto" "footerContacto";
-  }
-  .mainProductos {
-    grid-template-columns: 1fr;
-    grid-template-areas: "tituloh1Prod" "tituloHuevosProd" "huevosMarronesProd" "huevosBlancosProd" "textoHuevosProd" "tituloBalanceadosProd" "imagenGallinasProd" "textoGallinasProd" "imagenPollosProd" "textoPollosProd" "imagenCerdosProd" "textoCerdosProd" "imagenRumiantesProd" "textoRumiantesProd" "footerProd";
-  }
-  .mainSobreNosotros {
-    grid-template-columns: 1fr;
-    grid-template-areas: "tituloh1SN" "videoYoutubeSN" "articleTextSN" "footerSN";
-  }
-  .mainIndex {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "tituloh1Index tituloh1Index" "imagen1Index imagen2Index" "texto1Index texto1Index" "imagen3Index imagen3Index" "imagen4Index imagen4Index" "imagen5Index imagen5Index" "imagen6Index imagen6Index" "texto2Index texto2Index" "footerIndex footerIndex";
-  }
-  .footerChild2 {
-    transform: scale(0.75);
-  }
-  footer {
-    font-size: 10px;
-  }
   .mapaGoogleContacto {
     aspect-ratio: 1/1.75;
   }
@@ -437,17 +466,6 @@ footer {
 @media (min-width: 769px) {
   .navbar-toggler {
     display: none;
-  }
-}
-@media (max-width: 500px) {
-  .footerChild1 {
-    max-width: 30%;
-  }
-  .footerChild2 {
-    max-width: 60%;
-  }
-  .footerChild3 {
-    max-width: 10%;
   }
 }
 
