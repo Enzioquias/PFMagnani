@@ -352,6 +352,14 @@ main li {
   border-width: 0 !important;
 }
 
+.main404 {
+  width: 100%;
+  text-align: center;
+}
+.main404 h1, .main404 p {
+  margin: 8vh auto;
+}
+
 .navbar-logo {
   height: 80px;
   width: 80px;

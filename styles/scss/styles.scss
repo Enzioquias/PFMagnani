@@ -99,6 +99,13 @@ main {
   border-width: 0 !important;
 }
 
+.main404{
+  width: 100%;
+  text-align: center;
+  h1,p{
+    margin: 8vh auto;
+  }
+}
 .navbar-logo {
   @include dimensionesImagen(80px, 80px);
 }
